@@ -1,0 +1,110 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333; /* Dark background for navigation */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Nav bar dropdown menu Styles*/
+.dropdown-nav {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-nav {
+    display: none;
+    position: absolute;
+    background-color: rgb(68, 68, 68);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%; /* Adjust the width as needed */
+    text-align: center; /* Center the dropdown content */
+    top: 100%; /* Position the dropdown below the link */
+}
+
+.dropdown-content-nav a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+
+}
+
+.dropdown-nav:hover .dropdown-content-nav {
+    display: block;
+}
+
+.dropdown-content-nav a:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+/*End of Nav bar dropdown menu Styles*/
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+.active {
+    background-color: #555;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    color: rgb(2, 2, 2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of the viewport height */
+}
+
+.first-description-box {
+    background-color: rgba(231, 225, 225, 0.6);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -75,7 +75,7 @@ h2 {
 }
 
 p {
-    color: rgb(0, 0, 0);
+    color: rgb(3, 3, 3);
     text-align: center;
     padding: 15px;
 }
@@ -88,10 +88,10 @@ main {
     box-sizing: border-box;
 }
 
-.first-description-box {
-    background-color: #fff; /* White background for boxes */
-    border: 1px solid #ddd; /* Gray border for boxes */
-    border-radius: 8px; /* Rounded corners for boxes */
+.first-description-box,
+.when-where-box {
+    background-color: rgba(236, 229, 229, 0.7);
+    border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -106,7 +106,7 @@ main {
     flex: 0 0 calc(30% - 20px); /* Adjust the width percentage and margin as needed */
     margin: 10px;
     padding: 15px;
-    border: 1px solid rgb(221, 221, 221);
+    background-color: rgba(236, 229, 229, 0.7);
     text-align: center;
     box-sizing: border-box;
 }

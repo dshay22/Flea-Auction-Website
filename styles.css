@@ -1,28 +1,25 @@
-
-
 body {
     font-family: 'Buffalow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Light blue background */
-    color: #000; /* Black text color */
+    background-color: #f5f5f5;
+    color: #000;
     padding-bottom: 80px;
 }
 
 header {
-    background-color: #3498db; /* Light blue header background */
-    color: #fff; /* White header text color */
+    background-color: #3498db;
+    color: #fff;
     text-align: center;
     padding: 20px;
 }
 
 nav {
-    background-color: #333; /* Dark background for navigation */
+    background-color: #333;
     padding: 10px;
     text-align: center;
 }
 
-/* Nav bar dropdown menu Styles*/
 .dropdown-nav {
     position: relative;
     display: inline-block;
@@ -34,9 +31,9 @@ nav {
     background-color: rgb(68, 68, 68);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    width: 100%; /* Adjust the width as needed */
-    text-align: center; /* Center the dropdown content */
-    top: 100%; /* Position the dropdown below the link */
+    width: 100%;
+    text-align: center;
+    top: 100%;
 }
 
 .dropdown-content-nav a {
@@ -44,7 +41,6 @@ nav {
     padding: 12px 16px;
     display: block;
     text-decoration: none;
-
 }
 
 .dropdown-nav:hover .dropdown-content-nav {
@@ -54,8 +50,6 @@ nav {
 .dropdown-content-nav a:hover {
     background-color: rgb(85, 85, 85);
 }
-
-/*End of Nav bar dropdown menu Styles*/
 
 nav a {
     color: rgb(255, 255, 255);
@@ -68,8 +62,11 @@ nav a:hover {
     background-color: rgb(85, 85, 85);
 }
 
-main {
+.main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .first-description-box,
@@ -77,50 +74,57 @@ main {
 .parking-box,
 .auction-dates-box,
 .load-in-box {
-    background-color: #fff; /* White background for boxes */
-    border: 1px solid #ddd; /* Gray border for boxes */
-    border-radius: 8px; /* Rounded corners for boxes */
+    max-width: 600px;
+    border-radius: 8px;
+    margin: 0 auto;
     padding: 20px;
     margin-bottom: 20px;
+    overflow: hidden;
+    background-color: rgba(50, 50, 50, 0.8);
 }
 
 main h2 {
-    color: #000; /* Black heading color */
+    color: #fff;
     text-align: center;
     margin-bottom: 10px;
 }
 
 main p {
     margin-bottom: 15px;
+    color: #fff;
 }
 
 main a {
-    color: #3498db; /* Light blue link color */
+    color: rgb(52, 152, 219);
 }
 
 main a:hover {
-    color: #21618c; /* Darker blue on hover */
+    color: rgb(2, 80, 248);
 }
 
-.auction-table, .load-in-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+.space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.auction-table th, .auction-table td, .load-in-table th, .load-in-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+.Auction-flyer-class {
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 20px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
 }
 
-.auction-table th, .load-in-table th{
-    background-color: #f2f2f2;
+.Auction-flyer-class:hover {
+    opacity: 1;
 }
 
 footer {
-    background-color: #333; /* Dark background for footer */
-    color: #fff; /* White text color for footer */
+    border-radius: 8px;
+    margin: 0 auto;
+    background-color: rgba(50, 50, 50, 0.8);
+    color: #fff;
     text-align: center;
     padding: 20px;
     position: fixed;
@@ -129,11 +133,11 @@ footer {
 }
 
 footer a {
-    color: #fff; /* White link color in footer */
+    color: rgb(52, 152, 219);
     text-decoration: none;
     margin: 0 10px;
 }
 
 footer a:hover {
-    color: #ccc; /* Lighter color on hover in footer */
+    color: rgb(2, 80, 248);
 }
